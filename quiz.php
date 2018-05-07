@@ -16,6 +16,7 @@
     <input type="radio" name="question3" id="q3-1"  value="A"/><label for='q3-1'>CST 336 <br />
     <input type="radio" name="question3" id="q3-2"  value="B"/><label for='q3-1'>CST 338 <br />
     <input type="radio" name="question3" id="q3-3"  value="C"/><label for='q3-1'>CST 370 <br />
+    <div id="question3-feedback" class="answer"></div><br />
 
     <!--Question 4 -->
     What is the current year this quiz is supposed to be due? 
