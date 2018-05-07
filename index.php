@@ -1,12 +1,11 @@
 <?php
 session_start();
-
 function displayQuiz(){
     //displays Quiz if session is active
-    if(isset($_SESSION['username'])){
-        include 'quiz.php';
-    }else{
-        header("Location: login.php");
+    if (isset($_SESSION['username'])) {
+        include 'quiz.php'; 
+    } else {
+        header("Location: login.php"); 
     }
 }
 ?>
@@ -24,19 +23,20 @@ function displayQuiz(){
             <?php echo "Welcome ".$_SESSION['username']."! ";?> 
             <input type="button" id="logoutBtn" value="Logout" />    
         </div>
-        <!--Display Quiz Content-->
+        
         <div class="content-wrapper">
+            <!--Display Quiz Content-->
             <div id="quiz">
                 <h1>Quiz</h1>
                 <?=displayQuiz()?>
                 
-                    <div id="feedback">
-                        <h2>Your final score is <span id="score"> score</span></h2>
-                        
-                        You've taken this quiz <strong id="times"></strong> time(s). <br /><br />
-                        
-                        Your average score was <strong id="average"></strong>
-                    </div>
+                <div id="feedback">
+                    <h2>Your final score is <span id="score">score</span></h2>
+                    
+                    You've taken this quiz <strong id="times"></strong> time(s). <br/> <br/>
+                    
+                    Your average score was <strong id="average"></strong>
+                </div>
             </div>
             <div id="mascot">
                 <img src="img/mascot.png" alt="CSUMB Mascot" width="350" />
@@ -44,6 +44,8 @@ function displayQuiz(){
         </div>
         
         <!--Javascript files-->
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/gradeQuiz.js"></script>
     </body>
 </html>

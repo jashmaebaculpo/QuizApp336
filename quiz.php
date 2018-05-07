@@ -10,6 +10,17 @@
     <input type="radio" name="question2" id="q2-2"  value="B"/><label for='q2-2'>Albus <br />
     <input type="radio" name="question2" id="q2-3"  Value="C"/><label for='q2-3'>Monte Rey <br />
     <div id="question2-feedback" class="answer"></div><br />
+    
+    <!--Question 3-->
+    What class is this?<br/>
+    <input type="radio" name="question3" id="q3-1"  value="A"/><label for='q3-1'>CST 336 <br />
+    <input type="radio" name="question3" id="q3-2"  value="B"/><label for='q3-1'>CST 338 <br />
+    <input type="radio" name="question3" id="q3-3"  value="C"/><label for='q3-1'>CST 370 <br />
+
+    <!--Question 4 -->
+    What is the current year this quiz is supposed to be due? 
+    <input type="text" name="question4" size="5" /><br />
+    <div id="question4-feedback" class="answer"></div><br />
 
     <input type="submit" value="Submit" />
     
